@@ -1,0 +1,5 @@
+name: misk-app
+container:
+  name : misk-app-container
+  image: nginx:latest
+  port: 9001

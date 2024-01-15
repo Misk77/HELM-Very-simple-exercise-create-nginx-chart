@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .Values.name }}
+  namespace: nginx-ns
+spec:
+  containers:
+  - name: {{ .Values.container.name }}
+    image: {{ .Values.container.image }}
+    port: {{ .Values.container.port }}
+        
